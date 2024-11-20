@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Mencegah scroll */
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("../public/img/bg-tts.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* Memastikan background menutupi layar */
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Mengatur lebar container agar pas dengan layar */
+  flex-grow: 1;
+  margin-top: 210px;
+}
+
+#crosswordWrapper {
+  flex: 1; /* Crossword mengisi setengah lebar */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#puzzel {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.inputBox {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#rightBox {
+  flex: 1; /* Teks dan tombol mengisi setengah lebar */
+  padding: 20px;
+  height: 100%;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.butt {
+  height: 50px;
+  width: 107px;
+  margin-bottom: 10px;
+}
+
+#hintsTable {
+  margin-top: 20px;
+  background-color: rgb(255, 212, 220);
+  width: 60%;
+  padding: 20px;
+  border: 1px solid rgb(89, 89, 182);
+}
+
+#lanjutkanBtn {
+  display: inline-block;
+  height: 50px;
+  width: 107px;
+  border: 1px solid black;
+}
+
+table,
+td {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none; /* Menghilangkan bullet pada <ul> */
+  padding-left: 0; /* Menghapus indentasi (padding kiri) pada list */
+}

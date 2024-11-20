@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tts | Birthday</title>
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+
+  <body onload="initializeScreen()">
+    <div id="container">
+      <!-- Crossword Section -->
+      <div id="crosswordWrapper">
+        <table id="puzzel"></table>
+      </div>
+
+      <!-- Text and Buttons Section -->
+      <div id="rightBox">
+        <input
+          class="butt"
+          type="submit"
+          value="Clear All"
+          onclick="clearAllClicked()"
+        />
+        <input
+          class="butt"
+          type="submit"
+          value="Check"
+          onclick="checkAnswers()"
+        />
+        <input
+          id="lanjutkanBtn"
+          class="butt"
+          type="submit"
+          value="Lanjutkan"
+          onclick="window.location.href='/pages/netflix/index.html'"
+        />
+        <div id="hintsTable">
+          <div class="question">
+            <strong>Horizontal:</strong>
+            <ul>
+              <li>2. Sebutkan apa love language aku !</li>
+              <li>
+                4. Tempat yang mungkin menjadi saksi difirst date kita dan hari
+                ngerayain 1 bulan kita
+              </li>
+              <li>5. Apakah kamu tau buah kesukaan aku itu apa?</li>
+            </ul>
+          </div>
+          <div class="question">
+            <strong>Vertical:</strong>
+            <ul>
+              <li>
+                1. Kamu inget ga hari apa yang special bagi ku? iya hari pertama
+                kali kita first date. hari apa itu?
+              </li>
+              <li>
+                3. Kita memiliki hal yang sama yaitu zodiac, sebutkan apa zodiac
+                kita
+              </li>
+              <li>6. Kamu harus tau mengapa aku mencintai mu, karena kamu ?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="public/script.js"></script>
+  </body>
+</html>
